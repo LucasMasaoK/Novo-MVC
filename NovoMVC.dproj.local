@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/10/23 11:55:55.000.867,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/23 14:33:00.000.465,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/23 14:33:37.000.999,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\View\uPrincipalView.pas</Transaction>
+    <Transaction>2023/11/23 14:33:37.000.999,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\View\uPrincipalView.dfm</Transaction>
+    <Transaction>2023/11/23 14:33:47.000.440,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\ProjetoBase.dproj</Transaction>
+    <Transaction>2023/11/23 14:35:43.000.312,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\View\Modelo\uModelConsulta.pas</Transaction>
+    <Transaction>2023/11/23 14:36:02.000.777,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\View\Modelo\uModeloCad.pas</Transaction>
+    <Transaction>2023/11/23 14:40:48.000.437,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\Unit1.pas</Transaction>
+    <Transaction>2023/11/23 14:41:43.000.000,C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\Unit1.pas=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\udmConexaoDAO.pas</Transaction>
+    <Transaction>2023/11/23 14:41:43.000.000,C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\Unit1.dfm=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\udmConexaoDAO.dfm</Transaction>
+    <Transaction>2023/11/23 14:42:43.000.173,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\ProjetoBase\DAO\udmConexaoDAO.pas</Transaction>
+    <Transaction>2023/12/11 08:43:01.594,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\NovoMVC.dproj=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\ProjetoBase.dproj</Transaction>
+    <Transaction>2023/12/11 08:44:49.574,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\View\uClienteView.pas</Transaction>
+    <Transaction>2023/12/11 08:45:15.413,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\View\uClienteView.pas=</Transaction>
+    <Transaction>2023/12/11 08:46:02.528,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\View\uCadClienteView.pas</Transaction>
+    <Transaction>2023/12/11 08:47:39.308,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 08:47:59.125,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Model\uClienteModel.pas=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 08:51:21.023,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 08:51:52.944,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\DAO\uClienteDAO.dfm=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.dfm</Transaction>
+    <Transaction>2023/12/11 08:51:52.944,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\DAO\uClienteDAO.pas=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 09:03:22.697,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 09:03:37.105,C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Controller\uClienteController.pas=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 09:49:30.706,=C:\Users\lucas.marques\Documents\RAD Studio\Projects\Novo MVC\View\uPesqClienteView.pas</Transaction>
+  </Transactions>
+</BorlandProject>

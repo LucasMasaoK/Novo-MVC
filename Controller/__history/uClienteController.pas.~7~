@@ -1,0 +1,39 @@
+unit uClienteController;
+
+interface
+
+uses uClienteModel;
+
+type
+  TClienteController = class
+  private
+    FClienteModel: TClienteModel;
+    
+  public
+  property ClienteModel: TClienteModel read FClienteModel write FClienteModel;
+  function inserir:Boolean;
+  constructor Create;
+  destructor Destroy;Override;
+  end;
+
+implementation
+
+{ TClienteController }
+
+constructor TClienteController.Create;
+begin
+
+end;
+
+destructor TClienteController.Destroy;
+begin
+
+  inherited;
+end;
+
+function TClienteController.inserir: Boolean;
+begin
+  Result:=
+end;
+
+end.

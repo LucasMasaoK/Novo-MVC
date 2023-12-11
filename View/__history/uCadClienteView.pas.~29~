@@ -1,0 +1,106 @@
+unit uCadClienteView;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uModeloCad, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.ExtCtrls, uClienteController;
+
+type
+  TfrmCadCliente = class(TfrmModeloCadastro)
+    editCodigo: TLabeledEdit;
+    editNome: TLabeledEdit;
+    editTipo: TLabeledEdit;
+    editTelefone: TLabeledEdit;
+    editDocumento: TLabeledEdit;
+    procedure btnSalvarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnPesquisarClick(Sender: TObject);
+    procedure btnDeletarClick(Sender: TObject);
+    procedure limparEdits;
+  private
+    oClienteController: TClienteController;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadCliente: TfrmCadCliente;
+
+implementation
+
+{$R *.dfm}
+
+uses uPesqClienteView;
+
+procedure TfrmCadCliente.btnDeletarClick(Sender: TObject);
+begin
+  inherited;
+  oClienteController.ClienteModel.ID := StrToInt(editCodigo.Text);
+  if oClienteController.deletar = True then
+    ShowMessage('Cliente Deletado com sucesso');
+
+end;
+
+procedure TfrmCadCliente.btnNovoClick(Sender: TObject);
+begin
+  inherited;
+  editCodigo.Text := IntToStr(oClienteController.getID);
+end;
+
+procedure TfrmCadCliente.btnPesquisarClick(Sender: TObject);
+begin
+  inherited;
+  Application.CreateForm(TfrmPesqCliente, frmPesqCliente);
+  try
+    frmPesqCliente.ShowModal;
+  finally
+    FreeAndNil(frmPesqCliente);
+  end;
+end;
+
+procedure TfrmCadCliente.btnSalvarClick(Sender: TObject);
+
+begin
+  inherited;
+  case FOperacao of
+    opNovo:
+      begin
+        with oClienteController.ClienteModel do
+        begin
+          ID := StrToInt(editCodigo.Text);
+          Nome := editNome.Text;
+          Tipo := editTipo.Text;
+          Documento := editDocumento.Text;
+          Telefone := editTelefone.Text;
+        end;
+        oClienteController.inserir;
+      end;
+
+    opEditar:
+      ;
+    opPesquisar:
+      ;
+  end;
+
+end;
+
+procedure TfrmCadCliente.FormCreate(Sender: TObject);
+begin
+  inherited;
+  oClienteController := TClienteController.Create;
+end;
+
+procedure TfrmCadCliente.limparEdits;
+var
+  i: integer;
+begin
+  for i := 0 to (ComponentCount - 1) do
+    if Components[i] is TLabeledEdit then
+      TEdit(Components[i]).Clear;
+end;
+
+end.

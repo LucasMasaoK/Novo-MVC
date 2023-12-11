@@ -1,0 +1,18 @@
+inherited frmPesqCliente: TfrmPesqCliente
+  Caption = 'Pesquisa de Cliente'
+  ExplicitWidth = 539
+  ExplicitHeight = 347
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel2: TPanel
+    inherited btnPesquisar: TBitBtn
+      OnClick = btnPesquisarClick
+    end
+    inherited btnSelecionar: TBitBtn
+      OnClick = btnSelecionarClick
+    end
+  end
+  inherited DBGrid1: TDBGrid
+    OnDblClick = DBGrid1DblClick
+  end
+end

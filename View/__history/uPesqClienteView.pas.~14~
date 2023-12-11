@@ -1,0 +1,62 @@
+unit uPesqClienteView;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uModelConsulta, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, Datasnap.DBClient;
+
+type
+  TTela = (oCliente, oFornecedor);
+
+  TfrmPesqCliente = class(TfrmModelConsulta)
+    procedure btnPesquisarClick(Sender: TObject);
+    procedure btnSelecionarClick(Sender: TObject);
+
+  private
+
+  public
+    FTela: TTela;
+
+  end;
+
+var
+  frmPesqCliente: TfrmPesqCliente;
+
+implementation
+
+{$R *.dfm}
+
+uses uClienteController, uClienteDAO, uCadClienteView;
+
+procedure TfrmPesqCliente.btnPesquisarClick(Sender: TObject);
+var
+  oClienteController: TClienteController;
+begin
+  inherited;
+  oClienteController := TClienteController.Create;
+  try
+    oClienteController.pesquisar(editPesquisa.Text);
+    dtsGrid.DataSet := oClienteController.pesquisar(editPesquisa.Text);
+  finally
+
+  end;
+
+end;
+
+procedure TfrmPesqCliente.btnSelecionarClick(Sender: TObject);
+begin
+  inherited;
+  with dtsGrid.DataSet, frmCadCliente do
+  begin
+    editCodigo := FieldbyName('ID').AsInteger;
+    editNome := FieldbyName('NOME').AsString;
+    editTipo := FieldbyName('TIPO').AsString;
+    editDocumento := FieldbyName('DOCUMENTO').AsString;
+    editTelefone := FieldbyName('TELEFONE').AsString;
+  end;
+end;
+
+end.

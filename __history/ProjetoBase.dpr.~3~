@@ -1,0 +1,18 @@
+program ProjetoBase;
+
+uses
+  Vcl.Forms,
+  uPrincipalView in 'View\uPrincipalView.pas' {frmPrincipal},
+  uModelConsulta in 'View\Modelo\uModelConsulta.pas' {frmModelConsulta},
+  uModeloCad in 'View\Modelo\uModeloCad.pas' {frmModeloCadastro};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmModelConsulta, frmModelConsulta);
+  Application.CreateForm(TfrmModeloCadastro, frmModeloCadastro);
+  Application.Run;
+end.

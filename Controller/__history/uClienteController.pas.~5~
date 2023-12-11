@@ -1,0 +1,18 @@
+unit uClienteController;
+
+interface
+
+uses uClienteModel;
+
+type
+  TClienteController = class
+  private
+    FClienteModel: TClienteModel;
+    
+  public
+  property ClienteModel: TClienteModel read FClienteModel write FClienteModel;
+  end;
+
+implementation
+
+end.

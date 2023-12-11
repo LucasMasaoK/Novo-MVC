@@ -1,0 +1,77 @@
+inherited frmCadCliente: TfrmCadCliente
+  Caption = 'Cadastro Cliente'
+  ClientHeight = 332
+  ExplicitHeight = 371
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    Top = 260
+    ExplicitTop = 260
+    inherited btnSalvar: TBitBtn
+      OnClick = btnSalvarClick
+    end
+    inherited btnPesquisar: TBitBtn
+      OnClick = btnPesquisarClick
+    end
+    inherited btnDeletar: TBitBtn
+      OnClick = btnDeletarClick
+    end
+  end
+  object editCodigo: TLabeledEdit
+    Left = 40
+    Top = 40
+    Width = 57
+    Height = 21
+    EditLabel.Width = 33
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Codigo'
+    TabOrder = 1
+  end
+  object editNome: TLabeledEdit
+    Left = 40
+    Top = 80
+    Width = 297
+    Height = 21
+    CharCase = ecUpperCase
+    EditLabel.Width = 31
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Nome:'
+    TabOrder = 2
+  end
+  object editTipo: TLabeledEdit
+    Left = 40
+    Top = 120
+    Width = 57
+    Height = 21
+    CharCase = ecUpperCase
+    EditLabel.Width = 24
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Tipo:'
+    MaxLength = 1
+    TabOrder = 3
+  end
+  object editTelefone: TLabeledEdit
+    Left = 40
+    Top = 208
+    Width = 193
+    Height = 21
+    CharCase = ecUpperCase
+    EditLabel.Width = 46
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Telefone:'
+    MaxLength = 10
+    TabOrder = 4
+  end
+  object editDocumento: TLabeledEdit
+    Left = 40
+    Top = 160
+    Width = 193
+    Height = 21
+    CharCase = ecUpperCase
+    EditLabel.Width = 58
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Documento:'
+    MaxLength = 15
+    TabOrder = 5
+  end
+end
